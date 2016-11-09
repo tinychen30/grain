@@ -1,0 +1,68 @@
+.socials-list{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.socials-list li{
+    float: left;
+    margin-left: 16px;
+}
+.socials-list li:first-child{
+    margin-left: 0;
+}
+.socials-list li .icon{
+    width: 39px;
+    height: 39px;
+    background-size: 39px auto;
+}
+.socials-list li .icon-facebook{
+    background-image: url(../images/ui/general/icon-facebook.png);
+}
+.socials-list li .icon-twitter{
+    background-image: url(../images/ui/general/icon-twitter.png);
+}
+.socials-list li .icon-google-plus{
+    background-image: url(../images/ui/general/icon-google-plus.png);
+}
+.socials-list li .icon-letter{
+    background-image: url(../images/ui/general/icon-letter.png);
+}
+.socials-list li .icon-phone{
+    background-image: url(../images/ui/general/icon-phone.png);
+}
+
+@media (width <= 400px){
+    .socials-list li{
+        float: left;
+        margin-left: 6px;
+    }
+    .socials-list li .icon{
+        width: 32px;
+        height: 32px;
+        background-size: 32px auto;
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio:1.25)      and (min-width:320px),
+only screen and (   min--moz-device-pixel-ratio:1.25)      and (min-width:320px),
+only screen and (     -o-min-device-pixel-ratio:1.25/1)    and (min-width:320px),
+only screen and (        min-device-pixel-ratio:1.25)      and (min-width:320px),
+only screen and (              min-resolution:120dpi)      and (min-width:320px),
+only screen and (               min-resolution:2dppx)      and (min-width:320px){
+    .socials-list li .icon-facebook{
+        background-image: url(../images/ui/general/icon-facebook@2x.png);
+    }
+    .socials-list li .icon-twitter{
+        background-image: url(../images/ui/general/icon-twitter@2x.png);
+    }
+    .socials-list li .icon-google-plus{
+        background-image: url(../images/ui/general/icon-google-plus@2x.png);
+    }
+    .socials-list li .icon-letter{
+        background-image: url(../images/ui/general/icon-letter@2x.png);
+    }
+    .socials-list li .icon-phone{
+        background-image: url(../images/ui/general/icon-phone@2x.png);
+    }
+}

@@ -1,0 +1,597 @@
+.site-header{
+    border: 0 none;
+    min-height: 253px;
+    position: relative;
+    text-align: center;
+}
+.site-header .container{
+    background: var(--white);
+    min-height: 195px;
+}
+.site-header .profile-section{
+    margin:0 -10px;
+    text-align: left;
+}
+.site-header .avatar-user{
+    float: left;
+    width: 39%;
+    position: relative;
+    padding-left:15px;
+    padding-right: 10px;
+    margin-top: 42px;
+}
+.site-header .avatar-user .frame{
+    border-radius:100%;
+    background: #dcd6ce center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    max-width: 128px;
+    max-height: 128px;
+}
+.site-header .avatar-user .img-transparent{
+    width: 100%;
+}
+.site-header .avatar-user a{
+    text-decoration: none;
+}
+.site-header .avatar-user .icon-camera{
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 24px;
+    height: 18px;
+    background-image: url(../images/ui/master/header/icon_camera.png);
+    background-size: 24px auto;
+}
+.site-header .info-user{
+    float: left;
+    width: 61%;
+    padding-left:10px;
+    padding-right: 10px;
+    margin-top: 33px;
+}
+.site-header .name-user{
+    font-size: var(--s15);
+    font-family: var(--primary);
+    font-weight: 700;
+    margin-bottom: 11px;
+}
+.site-header .rating-section{
+    margin-bottom: 3px;
+}
+.site-header .rating-section label{
+    display: block;
+    font-size: var(--s14);
+    font-family: var(--primary);
+    color: #000;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 8px;
+}
+.site-header .rating-section .rating-container{
+    margin-bottom: 7px;
+}
+.site-header .rating-animate .filled-stars{
+    background-color: var(--white);
+}
+.site-header .rating-section .rating-reviews{
+    line-height: 19px;
+    font-size: var(--p);
+    font-family: var(--primary);
+    color: var(--base);
+    font-weight: 400;
+    margin-left: 10px;
+}
+.site-header .rating-section .rating-unrated{
+    line-height: 19px;
+    font-size: var(--p);
+    font-family: var(--primary);
+    color: var(--base);
+    font-weight: 400;
+    position: relative;
+    top:-4px;
+}
+.site-header .cp-block{
+    display: inline-block;
+}
+.site-header .cp-block .cp-title > span{
+    position: relative;
+}
+.site-header .cp-block .cp-title .icon{
+    cursor: pointer;
+    position: absolute;
+    right:-26px;
+    width: 19px;
+    bottom: 0;
+    top: 0;
+    background-image: url(../images/ui/master/header/icon_tooltip.png);
+    background-size: 19px auto;
+}
+
+.site-header dl{
+    float: right;
+    width: 165px;
+}
+.site-header dt{
+    margin-bottom: 16px;
+    margin-top: 45px;
+    text-align: right;
+}
+.site-header dt label{
+    font-size: var(--s14);
+    font-family: var(--primary);
+    font-weight: 400;
+    color: var(--black);
+    margin-bottom: 0;
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+}
+.site-header dt .icon-tooltip{
+    background-image: url(../images/ui/master/header/icon_tooltip.png);
+    background-size: 18px auto;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+}
+.site-header dd{
+    position: relative;
+    padding-left: 32px;
+    padding-top: 1px;
+    margin-bottom: 16px;
+    height: 29px;
+    display: inline-block;
+    float: right;
+}
+.site-header dd .icon{
+    width: 24px;
+    height: 30px;
+    position: absolute;
+    top:-1px;
+    bottom: 0;
+    left: 0;
+}
+.site-header dd .icon-location{
+    background-image: url(../images/ui/master/header/icon_location.png);
+    background-size: 23px auto;
+}
+.site-header dd .icon-interest{
+    background-image: url(../images/ui/master/header/icon_interest.png);
+    background-size: 24px auto;
+}
+.site-header dd .icon-chat{
+    width: 33px;
+    height: 31px;
+    background-image: url(../images/ui/master/header/icon_chat.png);
+    background-size: 33px auto;
+}
+.site-header dd .btn{
+    height: 27px;
+    font-size: var(--s14);
+    font-family: var(--primary);
+    font-weight: 400;
+    width: 122px;
+    text-transform: capitalize;
+}
+.site-header dd.dd-chat{
+    padding-left: 39px;
+}
+.site-header dd.dd-chat .btn{
+    width: 55px;
+}
+
+.site-header nav{
+    text-align: center;
+    background: var(--white);
+    text-transform: uppercase;
+    width: 1200px;
+    margin:0 auto;
+    padding-top: 21px;
+}
+.site-header nav ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    border-bottom: 3px solid #3b8186;
+}
+.site-header nav li{
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.site-header nav li a{
+    display: block;
+    color: var(--base);
+    font-size: var(--s14);
+    font-family: var(--primary);
+    font-weight: 400;
+    padding:0 23px;
+    line-height: 34px;
+    text-decoration: none;
+    border-radius: 3px 3px 0 0;
+}
+.site-header nav li a:hover,
+.site-header nav li.active a{
+    color: var(--white);
+    background: var(--positive);
+}
+.other-user-page .site-header:not(.site-header-other){
+    display: none;
+}
+.other-user-page .user-point{
+    display: none;
+}
+.cp-tooltip{
+    top: 72px !important;
+}
+.cp-tooltip .tooltipster-arrow-right span,
+.cp-tooltip .tooltipster-arrow-right .tooltipster-arrow-border{
+    top: 20px;
+}
+
+.dfa-tooltip{
+    top: 90px !important;
+}
+.dfa-tooltip .tooltipster-arrow-left span,
+.dfa-tooltip .tooltipster-arrow-left .tooltipster-arrow-border{
+    top: 20px;
+}
+.site-header-other .profile-section .avatar-user .btn-chat{
+    display: none;
+}
+
+@media (width <= 1229px){
+    .site-header nav{
+        width: 100%;
+    }
+}
+
+@media (width <= 991px){
+    .site-header nav li a{
+        padding:0 19px;
+    }
+}
+
+@media (width <= 767px){
+    .other-user-page .site-header:not(.site-header-other){
+        display: block;
+    }
+    .site-header:not(.site-header-other){
+        position: fixed;
+        top:0;
+        right: 0px;
+        width:calc(100% - 70px);
+        height: 100%;
+        background: var(--positive);
+        z-index: 3;
+        transition: all 0.5s ease 0s;
+        transform: translate3d(calc(100%), 0px, 0px);
+        overflow: hidden;
+        visibility: hidden;
+        overflow-y: auto;
+    }
+    .site-header:not(.site-header-other) .container{
+        padding-left: 26px;
+        padding-right: 26px;
+        background: var(--white);
+    }
+    .site-header:not(.site-header-other) .row{
+        margin-left: -26px;
+        margin-right: -26px;
+    }
+    .site-header:not(.site-header-other) div[class*="col-"]{
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+    .site-header:not(.site-header-other) .cp-block{
+        margin: 26px 0 6px;
+    }
+    .site-header .cp-block .cp-title .icon{
+        display: none;
+    }
+    .site-header .cp-block .cp-content{
+        background: none;
+        padding-top: 2px;
+    }
+    .site-header:not(.site-header-other) .profile-section{
+        padding-bottom: 19px;
+        display: inline-block;
+    }
+    .site-header:not(.site-header-other) .avatar-user{
+        margin-top: 38px;
+        width: auto;
+    }
+    .site-header:not(.site-header-other) .avatar-user .frame{
+        max-width: 82px;
+        max-height: 82px;
+    }
+    .site-header:not(.site-header-other) .info-user{
+        margin-top: 32px;
+        width: auto;
+    }
+    .site-header:not(.site-header-other) .name-user{
+        font-size: var(--s14);
+        margin-bottom: 8px;
+    }
+    .site-header:not(.site-header-other) .rating-section label{
+        font-size: var(--s13);
+        margin-bottom: 0;
+    }
+    .site-header:not(.site-header-other) .rating-section{
+        margin-bottom: 2px;
+    }
+    .site-header:not(.site-header-other) div.pull-right{
+        padding:0;
+    }
+    .site-header:not(.site-header-other) dl{
+        width: 100%;
+        border-top: 1px solid #d9d9d9;
+        padding: 20px 26px 5px;
+        margin: 0;
+    }
+    .site-header:not(.site-header-other) dt{
+        display: none;
+    }
+    .site-header:not(.site-header-other) dd{
+        float: none;
+        padding:0;
+        display: block;
+        margin: 0px auto 16px;
+        background: var(--positive);
+        border-radius: 6px;
+        height: auto;
+        width: 220px;
+    }
+    .site-header:not(.site-header-other) dd .icon{
+        height: 46px;
+        width: 52px;
+        top:0;
+        z-index: 1;
+    }
+    .site-header:not(.site-header-other) dd .btn{
+        width: 100%;
+        height: 46px;
+        background: transparent;
+        position: relative;
+        z-index: 2;
+        font-size: var(--h6);
+        text-transform: uppercase;
+        padding-left: 58px;
+        text-align: left;
+    }
+    .site-header:not(.site-header-other) dd.dd-chat{
+        padding-left: 0;
+    }
+    .site-header:not(.site-header-other) dd.dd-chat.disabled{
+        background: var(--disabled);
+    }
+    .site-header:not(.site-header-other) dd.dd-chat .btn{
+        width: 100%;
+        color: var(--white);
+    }
+    .site-header:not(.site-header-other) dd.dd-chat :--button_positive_disable{
+        background: transparent;
+    }
+    .site-header:not(.site-header-other) nav{
+        background: var(--positive);
+        padding-bottom: 21px;
+    }
+    .site-header:not(.site-header-other) nav ul{
+        border: 0 none;
+    }
+    .site-header:not(.site-header-other) nav li{
+        display: block;
+    }
+    .site-header:not(.site-header-other) nav li a{
+        text-align: left;
+        padding: 0 0 0 84px;
+        color: var(--white);
+        line-height: 48px;
+    }
+    .site-header:not(.site-header-other) nav li.active a{
+        color: var(--base);
+    }
+    .site-header:not(.site-header-other) nav li a > span{
+        background: var(--white);
+        display: inline-block;
+        line-height: 24px;
+        border-radius: 10px;
+        padding: 0 10px;
+        margin-left: 15px;
+        color: #ff2965;
+    }
+
+    .site-header-other dl{
+        float: none;
+        margin: 0px auto;
+    }
+
+    .site-header-other dt{
+        margin-bottom: 16px;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .site-header-other dt .bootstrap-switch{
+        display: inline-block;
+        float: none;
+    }
+
+    .site-header-other  dd.dd-chat{
+        float: none;
+        display: inline-block;
+    }
+
+    .site-header-other .avatar-user{
+        margin-top: 38px;
+        width: auto;
+    }
+
+    .site-header-other .info-user {
+        margin-top: 32px;
+        width: auto;
+    }
+
+    .site-header-other .profile-section{
+        display: inline-block;
+    }
+    .site-header-other .cp-block{
+        position: absolute;
+        top: 180px;
+        left: calc(50% - 123px);
+        display: none;
+    }
+
+    .site-header-other .pull-right{
+        display: none;
+    }
+
+    .site-header-other .profile-section .avatar-user .btn-chat{
+        padding: 0 10px;
+        height: 30px;
+        font-size: .875em;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        color: #fff;
+        display: block;
+        background-color: #1bc0ca;
+        margin: 15px auto 0px;
+        min-width: 80px;
+        text-transform: capitalize;
+    }
+
+    .site-header-other nav ul li{
+        width: 23%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .site-header-other nav ul li a,
+    .site-header-other nav ul li a:hover,
+    .site-header-other nav ul li.active a{
+        color: transparent;
+        display: inline-block;
+        padding: 0px;
+        margin: 0px;
+        font-size: 10px;
+        background-size: 24px auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+    }
+
+    .site-header-other nav ul li#navHomeOther a{
+        background-image: url(../images/ui/pages/about/icon_home.png);
+    }
+
+    .site-header-other nav ul li#navEventsOther a{
+        background-image: url(../images/ui/pages/upcoming/icon_calendar.png);
+    }
+
+    .site-header-other nav ul li#navReviewsOther a{
+        background-image: url(../images/ui/pages/reviews/icon_reviews.png);
+    }
+
+    .site-header-other nav ul li#navConnectionsOther a{
+        background-image: url(../images/ui/pages/connection/mobile/icon_connections.png);
+    }
+
+    .site-header-other nav ul li.active{
+        background-color: #1bc0ca;
+        border-radius: 3px 3px 0 0;
+    }
+
+    .site-header-other nav ul li#navHomeOther.active a{
+        background-image: url(../images/ui/pages/about/icon_home_white.png);
+    }
+
+    .site-header-other nav ul li#navEventsOther.active a{
+        background-image: url(../images/ui/pages/upcoming/icon_calendar_white.png);
+    }
+
+    .site-header-other nav ul li#navReviewsOther.active a{
+        background-image: url(../images/ui/pages/reviews/icon_reviews_white.png);
+    }
+
+    .site-header-other nav ul li#navConnectionsOther.active a{
+        background-image: url(../images/ui/pages/connection/mobile/icon_connections_white.png);
+    }
+
+    .other-user-page .user-point{
+        padding-bottom: 5px;
+        display: block;
+    }
+}
+
+@media (width <= 400px){
+    .site-header:not(.site-header-other) .avatar-user{
+        float: none;
+        width: 125px;
+        margin-top: 19px;
+        padding:0;
+    }
+    .site-header:not(.site-header-other) .info-user{
+        float: none;
+        width: 100%;
+        padding:0;
+    }
+    .site-header:not(.site-header-other) dl{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .site-header:not(.site-header-other) dd{
+        width: 100%;
+    }
+    .site-header:not(.site-header-other) dd .btn{
+        padding-left: 46px;
+        font-size: .85em;
+    }
+    .site-header:not(.site-header-other) dd .icon{
+        width: 46px;
+    }
+    .site-header:not(.site-header-other) nav li a{
+        padding-left: 15px;
+    }
+
+    .site-header:not(.site-header-other) .avatar-user .frame{
+        margin: 0px auto;
+    }
+
+    .site-header-other .cp-block{
+        left: calc(50% - 90px);
+        display: none;
+    }
+    .site-header-other .avatar-user .frame{
+        max-width: 95px;
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio:1.25)      and (min-width:320px),
+only screen and (   min--moz-device-pixel-ratio:1.25)      and (min-width:320px),
+only screen and (     -o-min-device-pixel-ratio:1.25/1)    and (min-width:320px),
+only screen and (        min-device-pixel-ratio:1.25)      and (min-width:320px),
+only screen and (              min-resolution:120dpi)      and (min-width:320px),
+only screen and (               min-resolution:2dppx)      and (min-width:320px){
+    .site-header .avatar-user .icon-camera{
+        background-image: url(../images/ui/master/header/icon_camera@2x.png);
+    }
+    .site-header .cp-block .cp-title .icon{
+        background-image: url(../images/ui/master/header/icon_tooltip@2x.png);
+    }
+    .site-header dt .icon-tooltip{
+        background-image: url(../images/ui/master/header/icon_tooltip@2x.png);
+    }
+    .site-header dd .icon-location{
+        background-image: url(../images/ui/master/header/icon_location@2x.png);
+    }
+    .site-header dd .icon-interest{
+        background-image: url(../images/ui/master/header/icon_interest@2x.png);
+    }
+    .site-header dd .icon-chat{
+        background-image: url(../images/ui/master/header/icon_chat@2x.png);
+    }
+}

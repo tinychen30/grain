@@ -1,0 +1,528 @@
+.site-top{
+    height: 53px;
+    background: var(--white);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+}
+.site-top section{
+}
+.site-top .logo{
+    float: left;
+    margin-left: -15px;
+}
+.site-top .logo img{
+    width: 90px;
+    margin-top: 9px;
+}
+.site-top .link-account{
+    display: none;
+    float: right;
+    padding: 17px 0;
+    margin-left: 18px;
+}
+.site-top .link-account .avatar{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background:url(../images/ui/master/top/mobile/avatar_default.png) center center no-repeat;
+    background-size: cover;
+}
+.hambeger-section .navbar-left{
+    margin-left: 15px;
+    margin-top: 9px;
+}
+.hambeger-section .navbar-left li{
+    margin-right: 5px;
+}
+.hambeger-section .navbar-left .btn-positive{
+    height: 36px;
+}
+.hambeger-section .navbar-left .li-search{
+}
+.hambeger-section .navbar-left .li-search .form-control{
+    display: inline-block;
+    width: 325px;
+    height: 36px;
+    border: 1px solid #8e8e8e;
+    border-right:0;
+    border-radius: 3px 0 0 3px;
+    font-size: var(--s14);
+    font-family: var(--primary);
+    padding: 0 7px;
+    float: left;
+}
+.hambeger-section .navbar-left .li-search .btn{
+    width: 65px;
+    height: 36px;
+    border: 1px solid #8e8e8e;
+    border-left:0;
+    border-radius: 0 3px 3px 0;
+    float: left;
+}
+.hambeger-section .navbar-left .li-search-logged .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+    width: 96px;
+    float: left;
+}
+.hambeger-section .navbar-left .li-search-logged .bootstrap-select :--button{
+    border:0 none;
+    border-radius: 3px 0 0 3px;
+    padding: 0 12px;
+    text-align: left;
+    background: var(--positive);
+    color: var(--white);
+    height: 36px;
+}
+.hambeger-section .navbar-left .li-search-logged .bootstrap-select.open :--button{
+    border-radius: 3px 0 0 0;
+}
+.hambeger-section .navbar-left .li-search-logged .bootstrap-select.btn-group .dropdown-toggle .caret{
+    border-top: 6px dashed;
+    margin-top: -3px;
+}
+.hambeger-section .navbar-left .li-search-logged div.dropdown-menu{
+    margin:0;
+    padding:0;
+    border-radius: 0 0 3px 3px;
+    background: var(--white);
+}
+.hambeger-section .navbar-left .li-search-logged .dropdown-menu li{
+    margin:0;
+}
+.hambeger-section .navbar-left .li-search-logged .dropdown-menu li a{
+    padding: 8px 12px;
+}
+.hambeger-section .navbar-left .li-search-logged .form-control{
+    width: calc(325px - 43px);
+    border-radius: 0;
+    border-left: 0 none;
+    border-right:0;
+    float: left;
+    height: 36px;
+    padding-right: 0;
+}
+.hambeger-section .navbar-left .li-search-logged .btn-positive{
+    width: 43px;
+    height: 36px;
+    border:1px solid #8e8e8e;
+    border-left: 0 none;
+    border-radius: 0 3px 3px 0;
+    background: transparent url(../images/ui/master/top/icon_search.png) center center no-repeat;
+    background-size: 19px auto;
+    float: left;
+}
+.hambeger-section .navbar-left .li-btn .btn{
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 63px;
+}
+.hambeger-section .navbar-right li{
+    margin-left: 25px;
+}
+.hambeger-section .navbar-right li:first-child{
+    margin-left: 0;
+}
+.hambeger-section .navbar-right li a{
+    font-size: var(--h6);
+    font-family: var(--primary);
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--base);
+    padding:0 0 0 30px;
+    line-height: 53px;
+    position: relative;
+}
+.hambeger-section .navbar-right a:hover{
+    background: transparent;
+    color: #17a0a9;
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+.hambeger-section .navbar-right .icon{
+    width: 20px;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+}
+.hambeger-section .navbar-right .icon-register{
+    background-image: url(../images/ui/master/top/icon_register.png);
+    background-size: 20px auto;
+}
+.hambeger-section .navbar-right .icon-login{
+    background-image: url(../images/ui/master/top/icon_login.png);
+    background-size: 19px auto;
+}
+.hambeger-section .navbar-right .icon-chat{
+    width: 26px;
+    background-image: url(../images/ui/master/top/icon_chat.png);
+    background-size: 22px auto;
+}
+.hambeger-section .navbar-right .icon-notify{
+    width: 22px;
+    background-image: url(../images/ui/master/top/icon_notify.png);
+    background-size: 19px auto;
+}
+.hambeger-section .navbar-right .icon-profile{
+    background-image: url(../images/ui/master/top/icon_profile.png);
+    background-size: 20px auto;
+}
+.hambeger-section .navbar-right .icon-settings{
+    background-image: url(../images/ui/master/top/icon_settings.png);
+    background-size: 25px auto;
+}
+.hambeger-section .navbar-right .icon-sign-out{
+    background-image: url(../images/ui/master/top/icon_sign_out.png);
+    background-size: 26px auto;
+}
+.hambeger-section .navbar-right li.li-chat a{
+    height: 53px;
+}
+.hambeger-section .navbar-right li.li-notify{
+    width: 22px;
+    margin-left: 15px;
+}
+.hambeger-section .navbar-right li.li-notify span.number{
+    display: inline-block;
+    min-width: 22px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    font-size: var(--p);
+    padding: 0 3px;
+    font-weight: 700;
+    background-color: var(--positive);
+    color:var(--white);
+    border-radius: 12px;
+    position: relative;
+    top: -8px;
+    left: -12px;
+}
+.hambeger-section .navbar-right li.li-user a{
+    padding-left: 20px;
+    text-transform: none;
+    padding-right: 23px;
+}
+.hambeger-section .navbar-right li.li-user.open a{
+    border:0 none;
+    background: transparent;
+}
+.hambeger-section .navbar-right li.li-user a .caret{
+    color: var(--positive);
+    border-top-width: 6px;
+    margin-left: 10px;
+}
+.hambeger-section .navbar-right li.li-user .dropdown-menu{
+    border-color: #e5e5e5;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.hambeger-section .navbar-right .dropdown-menu .icon{
+    width: 66px;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right: 0;
+    left: inherit;
+}
+.hambeger-section .navbar-right li.li-user .dropdown-menu li{
+    margin:0;
+}
+.hambeger-section .navbar-right li.li-user .dropdown-menu li .caret{
+    border-top: 0 none;
+    border-bottom: 9px dashed;
+    border-left-width: 6px;
+    border-right-width: 6px;
+    color: #e5e5e5;
+    position: absolute;
+    top:-9px;
+    right: 20px;
+}
+.hambeger-section .navbar-right li.li-user .dropdown-menu li .caret + .caret{
+    border-bottom-width: 8px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    color: var(--white);
+    top: -8px;
+    right: 21px;
+}
+.hambeger-section .navbar-right li.li-user .dropdown-menu li a{
+    text-align: left;
+    margin: 0 2px;
+    padding: 0 20px;
+    border-top: 1px solid #e5e5e5;
+    line-height: 47px;
+}
+.hambeger-section .navbar-right li.li-user .dropdown-menu li:first-child a{
+    border-top: 0 none;
+}
+.hambeger-section .navbar-left .li-search-logged .bootstrap-select .btn .filter-option{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 98%;
+}
+
+@media (width <= 860px){
+    .hambeger-section .navbar-left .li-search .form-control{
+        width: 240px;
+    }
+}
+
+@media (width <= 767px){
+    .site-page{
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        transition: all 0.5s ease 0s;
+        perspective: 1000px;
+    }
+    .site-page *{
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+    .site-top{
+        height: 61px;
+        background: var(--positive);
+        text-align: center;
+    }
+    .site-top .navbar-toggle{
+        float: left;
+        margin: 12px 0;
+    }
+    .site-top .navbar-toggle .icon-bar{
+        background: var(--white);
+        height: 3px;
+    }
+    .site-top .logo{
+        float: none;
+        margin:0;
+        display: inline-block;
+    }
+    .site-top .logo img{
+        margin: 12px auto;
+    }
+    .hambeger-section{
+        position: fixed;
+        top:0;
+        left: 0;
+        width: calc(100% - 70px);
+        height: 100%;
+        background:var(--positive);
+        z-index: 9999;
+        overflow: hidden;
+        overflow-y: auto;
+        transition: all 0.5s ease 0s;
+        transform: translate3d(calc(-100%), 0px, 0px);
+        visibility: hidden;
+    }
+    .hambeger-section h2{
+        background:var(--white);
+        margin: 0;
+        font-size: var(--h4);
+        line-height: 30px;
+        font-weight: 300;
+        color: var(--positive);
+        text-align: center;
+        padding: 34px 24px 28px;
+    }
+    .hambeger-section .navbar-left{
+        background:var(--white);
+        padding: 0 24px;
+        margin:0 -5px;
+    }
+    .hambeger-section .navbar-left li{
+        float: left;
+        margin: 0 0 26px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .hambeger-section .navbar-left .li-search{
+        border-bottom: 1px solid #d9d9d9;
+        width: 100%;
+        padding-bottom: 30px;
+        margin-bottom: 24px;
+    }
+    .hambeger-section .navbar-left .li-search:after{
+        content:'';
+        display: block;
+        clear: both;
+    }
+    .hambeger-section .navbar-left .li-search .form-control{
+        height: 48px;
+        width: calc(100% - 48px);
+        padding-left: 18px;
+        font-size: var(--s18);
+        padding-right: 0;
+    }
+    .hambeger-section .navbar-left .li-search .btn{
+        border: 1px solid #a2a2a2;
+        height: 48px;
+        border-left: 0 none;
+        background: transparent;
+        width: 48px;
+        background: url(../images/ui/master/top/mobile/icon_search.png) center center no-repeat;
+        background-size: 23px auto;
+        font-size: 0;
+    }
+    .hambeger-section .navbar-left .li-search-logged .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+        width: 100%;
+        float: none;
+        margin-bottom: 15px;
+    }
+    .hambeger-section .navbar-left .li-search-logged{
+        border-bottom: 1px solid #d9d9d9;
+        width: 100%;
+        padding-bottom: 30px;
+        margin-bottom: 24px;
+    }
+    .hambeger-section .navbar-left .li-search-logged:after{
+        content:'';
+        display: block;
+        clear: both;
+    }
+    .hambeger-section .navbar-left .li-search-logged div.dropdown-menu{
+        position: absolute;
+        border:1px solid rgba(0, 0, 0, 0.15);
+    }
+    .hambeger-section .navbar-left .li-search-logged div.dropdown-menu li{
+        float: none;
+        width: 100%;
+        padding:0;
+        line-height: 48px;
+    }
+    .hambeger-section .navbar-left .li-search-logged div.dropdown-menu li a{
+        padding-top:14px;
+        padding-bottom: 14px;
+    }
+    .hambeger-section .navbar-left .li-search-logged .bootstrap-select :--button{
+        width: 100%;
+        height: 48px;
+        border-radius: 4px;
+        font-size: var(--s18);
+        float: none;
+    }
+    .hambeger-section .navbar-left .li-search-logged .bootstrap-select.open :--button{
+        border-radius: 3px 3px 0 0;
+    }
+    .hambeger-section .navbar-left .li-search-logged .form-control{
+        height: 48px;
+        width: calc(100% - 48px);
+        border: 1px solid #a2a2a2;
+        border-right:0 none;
+        border-radius: 4px;
+        padding-right: 0;
+        padding-left: 18px;
+        font-size: var(--s18);
+        border-radius: 3px 0 0 3px;
+    }
+    .hambeger-section .navbar-left .li-search-logged .btn{
+        width: 48px;
+        height: 48px;
+        border-color: #a2a2a2;
+        background-image: url(../images/ui/master/top/mobile/icon_search.png);
+        background-size: 23px auto;
+    }
+    .hambeger-section .navbar-left .li-btn{
+        width: 35%;
+    }
+    .hambeger-section .navbar-left .li-btn + .li-btn{
+        width: 37%;
+    }
+    .hambeger-section .navbar-left .li-btn + .li-btn + .li-btn{
+        width: 28%;
+    }
+    .hambeger-section .navbar-left .li-btn .btn-positive{
+        height: 47px;
+        font-size: var(--s18);
+        border: 1px solid #efefef;
+        border-radius: 4px;
+        width: 100%;
+    }
+    .site-top .link-account{
+        display: block;
+    }
+}
+
+@media (width <= 400px){
+    .hambeger-section h2{
+        font-size: var(--s18);
+        line-height: 22px;
+        padding: 17px 15px 14px;
+    }
+    .hambeger-section .navbar-left{
+        padding: 0 15px;
+    }
+    .hambeger-section .navbar-left li{
+        float: none;
+    }
+    .hambeger-section .navbar-left .li-search,
+    .hambeger-section .navbar-left .li-search-logged{
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+    .hambeger-section .navbar-left li.li-btn{
+        margin-bottom: 15px;
+    }
+    .hambeger-section .navbar-left .li-btn,
+    .hambeger-section .navbar-left .li-btn + .li-btn,
+    .hambeger-section .navbar-left .li-btn + .li-btn + .li-btn{
+        width: 100%;
+    }
+    .hambeger-section .navbar-left .li-search .form-control,
+    .hambeger-section .navbar-left .li-search-logged .form-control{
+        font-size: 13px;
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio:1.25)      and (min-width:320px),
+only screen and (   min--moz-device-pixel-ratio:1.25)      and (min-width:320px),
+only screen and (     -o-min-device-pixel-ratio:1.25/1)    and (min-width:320px),
+only screen and (        min-device-pixel-ratio:1.25)      and (min-width:320px),
+only screen and (              min-resolution:120dpi)      and (min-width:320px),
+only screen and (               min-resolution:2dppx)      and (min-width:320px){
+    .site-top .link-account .avatar{
+        background-image:url(../images/ui/master/top/mobile/avatar_default@2x.png);
+    }
+    .hambeger-section .navbar-right .icon-register{
+        background-image: url(../images/ui/master/top/icon_register@2x.png);
+    }
+    .hambeger-section .navbar-right .icon-login{
+        background-image: url(../images/ui/master/top/icon_login@2x.png);
+    }
+    .hambeger-section .navbar-right .icon-chat{
+        background-image: url(../images/ui/master/top/icon_chat@2x.png);
+    }
+    .hambeger-section .navbar-right .icon-notify{
+        background-image: url(../images/ui/master/top/icon_notify@2x.png);
+    }
+    .hambeger-section .navbar-right .icon-profile{
+        background-image: url(../images/ui/master/top/icon_profile@2x.png);
+    }
+    .hambeger-section .navbar-right .icon-settings{
+        background-image: url(../images/ui/master/top/icon_settings@2x.png);
+    }
+    .hambeger-section .navbar-right .icon-sign-out{
+        background-image: url(../images/ui/master/top/icon_sign_out@2x.png);
+    }
+    .hambeger-section .navbar-left .li-search .btn{
+        background-image: url(../images/ui/master/top/icon_search@2x.png);
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio:1.25)      and (max-width:767px),
+only screen and (   min--moz-device-pixel-ratio:1.25)      and (max-width:767px),
+only screen and (     -o-min-device-pixel-ratio:1.25/1)    and (max-width:767px),
+only screen and (        min-device-pixel-ratio:1.25)      and (max-width:767px),
+only screen and (              min-resolution:120dpi)      and (max-width:767px),
+only screen and (               min-resolution:2dppx)      and (max-width:767px){
+    .hambeger-section .navbar-left .li-search .btn,
+    .hambeger-section .navbar-left .li-search-logged .btn{
+        background-image: url(../images/ui/master/top/mobile/icon_search@2x.png);
+    }
+}
