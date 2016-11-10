@@ -1,38 +1,39 @@
 # Webapp
 
-## Architecture 
+## Architecture
 ```
 webapp
-    |- dist
+    |- public
     |- src
         |- assets
             |- css
                 |- libs (These are third party)
-                    _variables.scss
-				|- sass 
+				|- sass
 					|- base (These are mixins folder and element styles)
-						|- mixins (This includes all the mixins and functions)
-							_clearfix.scss
-							_text-overflow.scss...
-					|- ui (This includes overwrite and define new css)
-						|- partials (Define partials)
+                        |- settings
+						|- generic
+                        |- core
+                        |- components
+                            |- javascript
+                        |- utility
+                    |- libs (Overwrite third party)
+                        |- bootstrap
+                            _datetimepicker.scss
+                            _typeahead.scss
+                        |- nicescroll
+                            _nicescroll.scss
+                        |- coppie
+                            _coppie.scss
+                        |- tooltipser
+                            -tolltipser.scss
+					|- ui (Define style for web)
+						|- partials (Define style for master)
 							_header.scss
 							_footer.scss
 							_socials.scss...
-						|- libs (Overwrite third party such as)
-							|- bootstrap
-								_datetimepicker.scss
-								_typeahead.scss
-							|- nicescroll
-								_nicescroll.scss
-							|- coppie
-								_coppie.scss
-							|- tooltipser
-								-tolltipser.scss
-						|- plugins (Define for my plugins)
 						|- pages (Define style for pages)
 						|- modal (Define style for popups)
-						|- prints (Define for print page)
+						|- prints (Define style for print file)
             |- images
             |- js
 			|- fonts
@@ -49,7 +50,7 @@ webapp
 					sidebar.html
 					header.html
 					footer.html
-					loading.html				
+					loading.html
 				_layout.html
 			|- content (There are components of pages)
 				|- partials (This include inherit sections of page)

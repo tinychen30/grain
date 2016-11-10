@@ -4,19 +4,19 @@
 
 ## Usage
 
-### npm
-```
-# Install dependencies
-$ npm install
-
-# Server with hot reload at localhost:3000
-$ npm run dev
-```
-
-### yarn
+### [yarn](https://yarnpkg.com) - recommend
 ```
 # Install dependencies
 $ yarn install
+
+# Server with hot reload at localhost:3000
+$ yarn run dev
+```
+
+### [npm](https://www.npmjs.com/)
+```
+# Install dependencies
+$ npm install
 
 # Server with hot reload at localhost:3000
 $ npm run dev
@@ -35,5 +35,3 @@ You can folk this repository to create own boilerplate and use it with [vns-cli]
 ```
 $ vns init gulp-webapp yourproject
 ```
-
-- Video: https://asciinema.org/a/c6xamvqyg7799nsdssr418kiv?autoplay=1

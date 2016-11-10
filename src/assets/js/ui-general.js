@@ -19,24 +19,46 @@ var isMobile = {
 	}
 };
 
-var isResize = function(){
-    var sw = window.innerWidth
-            || document.documentElement.clientWidth
-            || document.body.clientWidth;
+function getWindowWidth(){
+    return window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
+}
 
+var isView = {
+    mobile: function(){
+        var sw = getWindowWidth();
+        if (sw < 768) {
+            return true;
+        };
+        return false;
+    },
+    tablet: function(){
+        var sw = getWindowWidth();
+        if (sw < 992 && sw > 767) {
+            return true;
+        };
+        return false;
+    },
+    desktop: function(){
+        var sw = getWindowWidth();
+        if (sw > 991) {
+            return true;
+        };
+        return false;
+    }
+};
+
+function monitorResize (callbackfnc){
+    callbackfnc.sw = getWindowWidth();
     var $window = $(window);
-
-    var isChange = false;
-
-    $(window).on('resize', function(){
-        if($window.width() !== sw){
-            sw = window.innerWidth
-                || document.documentElement.clientWidth
-                || document.body.clientWidth;
-
-            return isChange = true;
+    $window.on('resize', function(){
+        var nw = getWindowWidth();
+        if(nw !== callbackfnc.sw){
+            callbackfnc.sw = nw;
+            callbackfnc();
         }
-    )};
+    });
 };
 
 function settingsModal(){
@@ -70,6 +92,16 @@ $(document).ready(function(){
     settingsModal();
 
     $('.modal').on('show.bs.modal', centerModal);
+
+    monitorResize(function(){
+        alert('asassss');
+    })
+
+    setTimeout(function(){
+        monitorResize(function(){
+            alert('111');
+        })
+    }, 2000);
 });
 
 $(window).resize(function(){
